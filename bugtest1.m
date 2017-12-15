@@ -13,26 +13,26 @@ cvx_solver 'sdpt3'
 n = 60;
 
 % number of tests
-reps = 1;
+reps = 100;
 
-tic
+% time data
+t_inner = zeros(reps,1);
+t_outer = 0;
+
+t_outer = tic;
 for j=1:reps
     % draw rank-1 matrix and vectorize
     M0 = randn([n,1])*randn([n,1])';
-    size(M0)
     vecmat = reshape(M0,[n^2,1]);
-    size(vecmat)
     
     % draw linear map
     A = randn(6*n,n^2);
-    size(A)
     
     % y = incomplete information about M0
     y = A*vecmat;
-    size(y)
     
     %optimize
-    tic
+    t_inner_scalar = tic;
     cvx_begin sdp
         variable M(n,n)
       
@@ -43,13 +43,26 @@ for j=1:reps
         y == A*reshape(M,[n^2,1])
     cvx_end
     cvx_clear
-    toc
+    t_inner(j) = toc(t_inner_scalar);
     
     % compare M to M0
     fmat(j) = norm(reshape(M,[n^2,1]) - vecmat);
 end
-toc
+% save time it took for all reps to complete, includes random data
+% generation etc.
+t_outer = toc(t_outer);
 
 % largest deviation
 largest = max(abs(fmat));
 display(['largest deviation= ' num2str(largest)]);
+
+% number of reps, time and other info
+display([num2str(reps) ' reps']);
+
+% mean time of all reconstructions with data prep overhead
+display(['total time = ' num2str(t_outer)]);
+
+% mean time of a single reconstruction without overhead
+t_mean = mean(t_inner);
+display(['mean time ' num2str(t_mean)]);
+

@@ -18,18 +18,22 @@ np.random.seed(1337)
 n = 60
 
 #number of tests
-reps = 1
+reps = 2
 
 #List contains largest deviation for each rep
 fmat = []
 
 #Choose solver
-s = cvxpy.SCS
+s = cvxpy.MOSEK
 
-#Wallclock time
-start = time.time()
+#Wallclock times of single solver calls
+time_inner = [0] * reps
+
+#Wallclock time of all reps with overhead
+start_outer = time.time()
 
 for j in range(0, reps):
+	print(j)
 	#Draw rank-1 matrix and vectorize
 	M0 = np.matmul(np.random.randn(n,1), np.matrix.transpose(np.random.randn(n,1)))
 	vecmat = M0.reshape(n * n, order='F')
@@ -49,20 +53,31 @@ for j in range(0, reps):
 	start_inner = time.time()
 	prob.solve(solver=s, verbose=True)
 	end_inner = time.time()
-	print("inner loop wallclock time = " + str(end_inner - start_inner))
+	time_inner[j] = end_inner - start_inner
+	print("\nsingle solve call wallclock time = " + str(time_inner[j]))
 	
 	#Get results
 	M1 = M.value	
 	fmat.append(np.linalg.norm(M1.reshape(n * n, order='F') - vecmat))
 	print prob.status	
+	print("deviation = " + str(fmat[j]))
+	
+	#Print first 5 elements of original and reconstructed matrix
+	print("M0 first 5 elements:")
+	print(M0[0][0:5])
+	print("M1 first 5 elements:")
+	print(M1[0][0:5])
+	print("\n")
+	
+end_outer = time.time()
+time_outer = end_outer - start_outer
+mean_inner_time = np.mean(time_inner)
 
-	#print "j = ", j, " first row of M0:\n", M0[0]
-	#print("\nj = " + str(j) + " first row of M1:\n" + str(M1[0]) + "\n")
-
-end = time.time()
-print("outer loop wallclock time = " + str(end - start))
-
-print(fmat)
+#print(fmat)
 largest = np.max(np.absolute(fmat))
 print("largest deviation = " + str(largest))
+
+print("total wallclock time = " + str(time_outer))
+print("average single call time = " + str(mean_inner_time))
+
 

@@ -9,13 +9,13 @@ clear
 n = 60;
 
 % number of tests
-reps = 1;
+reps = 2;
 
 % PRNG seed
 randn("seed", 1337);
 
 % set solver here
-solver = 'sedumi';
+solver = 'csdp';
 
 % following function was used for some multithreading
 
@@ -23,8 +23,13 @@ solver = 'sedumi';
 %  t = 8;
 %endfunction
 
-tic
+tic% time data
+t_inner = zeros(reps,1);
+t_outer = 0;
+
+t_outer = tic;
 for j=1:reps
+    disp(j);
     % draw rank-1 matrix and vectorize
     M0 = randn([n,1])*randn([n,1])';
     vecmat = vec(M0);
@@ -40,9 +45,9 @@ for j=1:reps
     objective = norm(M,'nuclear')
     constraints = [y == A*reshape(M,[n^2,1])]
     options = sdpsettings('solver',solver);
-    tic
+    t_inner_scalar = tic;
     diagnostics = optimize(constraints, objective, options);
-    toc
+    t_inner(j) = toc(t_inner_scalar);
     solution = value(M);
     
     % compare M to M0
@@ -50,7 +55,9 @@ for j=1:reps
     M0(1,1:5)
     solution(1,1:5)
 end
-toc
+% save time it took for all reps to complete, includes random data
+% generation etc.
+t_outer = toc(t_outer);
 
 disp("\n\n");
 disp(diagnostics);
@@ -59,5 +66,15 @@ disp("\n\n");
 % largest deviation
 largest = max(abs(fmat));
 display(['largest deviation= ' num2str(largest)]);
+
+% number of reps, time and other info
+display([num2str(reps) ' reps']);
+
+% mean time of all reconstructions with data prep overhead
+display(['total time = ' num2str(t_outer)]);
+
+% mean time of a single reconstruction without overhead
+t_mean = mean(t_inner);
+display(['mean time ' num2str(t_mean)]);
 
 
