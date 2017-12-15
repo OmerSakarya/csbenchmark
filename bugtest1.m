@@ -7,13 +7,13 @@
 clear
 rng(1337);
 %run /home/omer/cvx/cvx_setup.m
-cvx_solver 'sdpt3'
+cvx_solver 'mosek'
 
 % matrix dimension 
 n = 60;
 
 % number of tests
-reps = 100;
+reps = 20;
 
 % time data
 t_inner = zeros(reps,1);
@@ -21,6 +21,7 @@ t_outer = 0;
 
 t_outer = tic;
 for j=1:reps
+    disp(j);
     % draw rank-1 matrix and vectorize
     M0 = randn([n,1])*randn([n,1])';
     vecmat = reshape(M0,[n^2,1]);
@@ -43,7 +44,7 @@ for j=1:reps
         y == A*reshape(M,[n^2,1])
     cvx_end
     cvx_clear
-    t_inner(j) = toc(t_inner_scalar);
+    t_inner(j) = toc(t_inner_scalar)
     
     % compare M to M0
     fmat(j) = norm(reshape(M,[n^2,1]) - vecmat);
@@ -65,4 +66,9 @@ display(['total time = ' num2str(t_outer)]);
 % mean time of a single reconstruction without overhead
 t_mean = mean(t_inner);
 display(['mean time ' num2str(t_mean)]);
+
+% standard deviation
+t_standard_deviation = std(t_inner);
+display(['time standard deviation ' num2str(t_standard_deviation)]);
+
 

@@ -9,7 +9,7 @@ clear
 n = 60;
 
 % number of tests
-reps = 2;
+reps = 20;
 
 % PRNG seed
 randn("seed", 1337);
@@ -47,7 +47,7 @@ for j=1:reps
     options = sdpsettings('solver',solver);
     t_inner_scalar = tic;
     diagnostics = optimize(constraints, objective, options);
-    t_inner(j) = toc(t_inner_scalar);
+    t_inner(j) = toc(t_inner_scalar)
     solution = value(M);
     
     % compare M to M0
@@ -77,4 +77,7 @@ display(['total time = ' num2str(t_outer)]);
 t_mean = mean(t_inner);
 display(['mean time ' num2str(t_mean)]);
 
+% standard deviation
+t_standard_deviation = std(t_inner);
+display(['time standard deviation ' num2str(t_standard_deviation)]);
 

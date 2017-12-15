@@ -18,7 +18,7 @@ np.random.seed(1337)
 n = 60
 
 #number of tests
-reps = 2
+reps = 3
 
 #List contains largest deviation for each rep
 fmat = []
@@ -72,6 +72,7 @@ for j in range(0, reps):
 end_outer = time.time()
 time_outer = end_outer - start_outer
 mean_inner_time = np.mean(time_inner)
+std_inner_time = np.std(time_inner)
 
 #print(fmat)
 largest = np.max(np.absolute(fmat))
@@ -79,5 +80,5 @@ print("largest deviation = " + str(largest))
 
 print("total wallclock time = " + str(time_outer))
 print("average single call time = " + str(mean_inner_time))
-
+print("standard deviation single call times = " + str(std_inner_time))
 
