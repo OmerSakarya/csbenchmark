@@ -1,6 +1,8 @@
-run bugtest0.m
+run bugtest1.m
+     1
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -13,7 +15,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -22,10 +24,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -42,85 +41,11 @@ Factor     - dense dim.             : 0                 flops                  :
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
 0   2.4e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.31  
 1   5.3e+00  2.0e-01  1.3e+01  -3.97e-01  1.480806359e+02   1.074065952e+02   2.3e-01  0.75  
-2   2.3e+00  8.7e-02  1.2e+01  1.95e+00   7.835877982e+01   6.718187916e+01   9.9e-02  1.13  
-3   2.4e-01  8.9e-03  5.9e+00  1.21e+00   6.254453468e+01   6.153542561e+01   1.0e-02  1.57  
-4   1.5e-02  5.7e-04  1.2e+00  1.06e+00   6.003337421e+01   5.997145609e+01   6.5e-04  2.00  
-5   3.4e-04  1.2e-05  1.7e-01  1.00e+00   5.988197834e+01   5.988062203e+01   1.4e-05  2.41  
-6   1.3e-07  4.7e-09  8.5e-08  1.00e+00   5.987851529e+01   5.987851477e+01   5.3e-09  2.85  
-Interior-point optimizer terminated. Time: 2.85. 
-
-Optimizer terminated. Time: 2.86    
-
-Interior-point solution summary
-  Problem status  : PRIMAL_AND_DUAL_FEASIBLE
-  Solution status : OPTIMAL
-  Primal.  obj: 5.9878515290e+01    nrm: 2e+02    Viol.  con: 4e-07    var: 0e+00    barvar: 0e+00  
-  Dual.    obj: 5.9878514772e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 7e-09  
-Optimizer summary
-  Optimizer                 -                        time: 2.86    
-    Interior-point          - iterations : 6         time: 2.85    
-      Basis identification  -                        time: 0.00    
-        Primal              - iterations : 0         time: 0.00    
-        Dual                - iterations : 0         time: 0.00    
-        Clean primal        - iterations : 0         time: 0.00    
-        Clean dual          - iterations : 0         time: 0.00    
-    Simplex                 -                        time: 0.00    
-      Primal simplex        - iterations : 0         time: 0.00    
-      Dual simplex          - iterations : 0         time: 0.00    
-    Mixed integer           - relaxations: 0         time: 0.00    
-
-------------------------------------------------------------
-Status: Solved
-Optimal value (cvx_optval): +59.8785
- 
- 
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
-------------------------------------------------------------
-
-MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
-Copyright (c) MOSEK ApS, Denmark. WWW: mosek.com
-Platform: Linux/64-X86
-
-Problem
-  Name                   :                 
-  Objective sense        : min             
-  Type                   : CONIC (conic optimization problem)
-  Constraints            : 360             
-  Cones                  : 0               
-  Scalar variables       : 3540            
-  Matrix variables       : 1               
-  Integer variables      : 0               
-
-Optimizer started.
-Conic interior-point optimizer started.
-Presolve started.
-Linear dependency checker started.
-Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
-Lin. dep.  - tries                  : 1                 time                   : 0.00            
-Lin. dep.  - number                 : 0               
-Presolve terminated. Time: 0.00    
-Optimizer  - threads                : 6               
-Optimizer  - solved problem         : the primal      
-Optimizer  - Constraints            : 360
-Optimizer  - Cones                  : 0
-Optimizer  - Scalar variables       : 0                 conic                  : 0               
-Optimizer  - Semi-definite variables: 1                 scalarized             : 7260            
-Factor     - setup time             : 0.10              dense det. time        : 0.00            
-Factor     - ML order time          : 0.00              GP order time          : 0.00            
-Factor     - nonzeros before factor : 6.50e+04          after factor           : 6.50e+04        
-Factor     - dense dim.             : 0                 flops                  : 1.11e+09        
-ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
-0   1.9e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
-1   4.2e+00  1.9e-01  1.3e+01  -1.87e-01  1.251244072e+02   9.085299986e+01   2.2e-01  0.75  
-2   1.8e+00  8.3e-02  1.2e+01  1.82e+00   7.071675964e+01   6.080051482e+01   9.5e-02  1.14  
-3   1.8e-01  8.3e-03  6.6e+00  1.20e+00   5.702664478e+01   5.614069120e+01   9.5e-03  1.58  
-4   6.3e-03  2.9e-04  9.8e-01  1.05e+00   5.489090985e+01   5.486110345e+01   3.3e-04  2.02  
-5   5.4e-05  2.5e-06  7.7e-02  1.00e+00   5.482141978e+01   5.482116568e+01   2.8e-06  2.43  
-6   3.3e-09  1.5e-10  2.8e-09  1.00e+00   5.482079994e+01   5.482079993e+01   1.7e-10  2.87  
+2   2.3e+00  8.7e-02  1.2e+01  1.95e+00   7.835877982e+01   6.718187916e+01   9.9e-02  1.14  
+3   2.4e-01  8.9e-03  5.9e+00  1.21e+00   6.254453468e+01   6.153542561e+01   1.0e-02  1.58  
+4   1.5e-02  5.7e-04  1.2e+00  1.06e+00   6.003337421e+01   5.997145609e+01   6.5e-04  2.02  
+5   3.4e-04  1.2e-05  1.7e-01  1.00e+00   5.988197834e+01   5.988062203e+01   1.4e-05  2.43  
+6   1.3e-07  4.7e-09  8.5e-08  1.00e+00   5.987851529e+01   5.987851477e+01   5.3e-09  2.86  
 Interior-point optimizer terminated. Time: 2.87. 
 
 Optimizer terminated. Time: 2.87    
@@ -128,8 +53,8 @@ Optimizer terminated. Time: 2.87
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
-  Primal.  obj: 5.4820799944e+01    nrm: 2e+02    Viol.  con: 1e-08    var: 0e+00    barvar: 0e+00  
-  Dual.    obj: 5.4820799929e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 2e-10  
+  Primal.  obj: 5.9878515290e+01    nrm: 2e+02    Viol.  con: 4e-07    var: 0e+00    barvar: 0e+00  
+  Dual.    obj: 5.9878514772e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 7e-09  
 Optimizer summary
   Optimizer                 -                        time: 2.87    
     Interior-point          - iterations : 6         time: 2.87    
@@ -145,10 +70,36 @@ Optimizer summary
 
 ------------------------------------------------------------
 Status: Solved
-Optimal value (cvx_optval): +54.8208
+Optimal value (cvx_optval): +59.8785
  
+
+t_inner =
+
+    4.8388
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+
+     2
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -161,7 +112,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -170,10 +121,104 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
+Lin. dep.  - tries                  : 1                 time                   : 0.00            
+Lin. dep.  - number                 : 0               
+Presolve terminated. Time: 0.00    
+Optimizer  - threads                : 6               
+Optimizer  - solved problem         : the primal      
+Optimizer  - Constraints            : 360
+Optimizer  - Cones                  : 0
+Optimizer  - Scalar variables       : 0                 conic                  : 0               
+Optimizer  - Semi-definite variables: 1                 scalarized             : 7260            
+Factor     - setup time             : 0.10              dense det. time        : 0.00            
+Factor     - ML order time          : 0.00              GP order time          : 0.00            
+Factor     - nonzeros before factor : 6.50e+04          after factor           : 6.50e+04        
+Factor     - dense dim.             : 0                 flops                  : 1.11e+09        
+ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
+0   1.9e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
+1   4.2e+00  1.9e-01  1.3e+01  -1.87e-01  1.251244072e+02   9.085299986e+01   2.2e-01  0.74  
+2   1.8e+00  8.3e-02  1.2e+01  1.82e+00   7.071675964e+01   6.080051482e+01   9.5e-02  1.12  
+3   1.8e-01  8.3e-03  6.6e+00  1.20e+00   5.702664478e+01   5.614069120e+01   9.5e-03  1.56  
+4   6.3e-03  2.9e-04  9.8e-01  1.05e+00   5.489090985e+01   5.486110345e+01   3.3e-04  1.99  
+5   5.4e-05  2.5e-06  7.7e-02  1.00e+00   5.482141978e+01   5.482116568e+01   2.8e-06  2.40  
+6   3.3e-09  1.5e-10  2.8e-09  1.00e+00   5.482079994e+01   5.482079993e+01   1.7e-10  2.83  
+Interior-point optimizer terminated. Time: 2.84. 
+
+Optimizer terminated. Time: 2.84    
+
+Interior-point solution summary
+  Problem status  : PRIMAL_AND_DUAL_FEASIBLE
+  Solution status : OPTIMAL
+  Primal.  obj: 5.4820799944e+01    nrm: 2e+02    Viol.  con: 1e-08    var: 0e+00    barvar: 0e+00  
+  Dual.    obj: 5.4820799929e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 2e-10  
+Optimizer summary
+  Optimizer                 -                        time: 2.84    
+    Interior-point          - iterations : 6         time: 2.84    
+      Basis identification  -                        time: 0.00    
+        Primal              - iterations : 0         time: 0.00    
+        Dual                - iterations : 0         time: 0.00    
+        Clean primal        - iterations : 0         time: 0.00    
+        Clean dual          - iterations : 0         time: 0.00    
+    Simplex                 -                        time: 0.00    
+      Primal simplex        - iterations : 0         time: 0.00    
+      Dual simplex          - iterations : 0         time: 0.00    
+    Mixed integer           - relaxations: 0         time: 0.00    
+
+------------------------------------------------------------
+Status: Solved
+Optimal value (cvx_optval): +54.8208
+ 
+
+t_inner =
+
+    4.8388
+    3.7958
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+
+     3
+
+ 
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
+------------------------------------------------------------
+
+MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
+Copyright (c) MOSEK ApS, Denmark. WWW: mosek.com
+Platform: Linux/64-X86
+
+Problem
+  Name                   :                 
+  Objective sense        : min             
+  Type                   : CONIC (conic optimization problem)
+  Constraints            : 360             
+  Cones                  : 0               
+  Scalar variables       : 1               
+  Matrix variables       : 1               
+  Integer variables      : 0               
+
+Optimizer started.
+Conic interior-point optimizer started.
+Presolve started.
+Linear dependency checker started.
+Linear dependency checker terminated.
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -190,23 +235,23 @@ Factor     - dense dim.             : 0                 flops                  :
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
 0   2.9e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
 1   6.2e+00  1.9e-01  1.1e+01  -5.54e-01  1.877860617e+02   1.406807134e+02   2.1e-01  0.74  
-2   2.7e+00  8.2e-02  1.1e+01  1.87e+00   9.939954779e+01   8.686389888e+01   9.3e-02  1.14  
+2   2.7e+00  8.2e-02  1.1e+01  1.87e+00   9.939954779e+01   8.686389888e+01   9.3e-02  1.13  
 3   3.5e-01  1.1e-02  4.7e+00  1.23e+00   7.884206887e+01   7.744540341e+01   1.2e-02  1.57  
-4   3.5e-02  1.1e-03  1.3e+00  1.08e+00   7.498201374e+01   7.484867850e+01   1.2e-03  2.01  
-5   2.7e-03  8.2e-05  3.6e-01  1.01e+00   7.463331010e+01   7.462302429e+01   9.4e-05  2.42  
-6   2.3e-05  6.8e-07  3.7e-02  1.00e+00   7.460239141e+01   7.460230574e+01   7.8e-07  2.86  
+4   3.5e-02  1.1e-03  1.3e+00  1.08e+00   7.498201374e+01   7.484867850e+01   1.2e-03  2.03  
+5   2.7e-03  8.2e-05  3.6e-01  1.01e+00   7.463331010e+01   7.462302429e+01   9.4e-05  2.44  
+6   2.3e-05  6.8e-07  3.7e-02  1.00e+00   7.460239141e+01   7.460230574e+01   7.8e-07  2.88  
 7   3.4e-10  1.1e-11  2.0e-10  1.00e+00   7.460214361e+01   7.460214361e+01   1.2e-11  3.31  
 Interior-point optimizer terminated. Time: 3.31. 
 
-Optimizer terminated. Time: 3.31    
+Optimizer terminated. Time: 3.32    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 7.4602143615e+01    nrm: 2e+02    Viol.  con: 1e-09    var: 0e+00    barvar: 3e-15  
-  Dual.    obj: 7.4602143614e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 2e-11  
+  Dual.    obj: 7.4602143614e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 2e-11  
 Optimizer summary
-  Optimizer                 -                        time: 3.31    
+  Optimizer                 -                        time: 3.32    
     Interior-point          - iterations : 7         time: 3.31    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
@@ -222,8 +267,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +74.6021
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+
+     4
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -236,7 +307,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -245,10 +316,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -264,24 +332,24 @@ Factor     - nonzeros before factor : 6.50e+04          after factor           :
 Factor     - dense dim.             : 0                 flops                  : 1.11e+09        
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
 0   1.6e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
-1   3.5e+00  2.0e-01  1.4e+01  -8.74e-02  1.133696912e+02   8.101760124e+01   2.2e-01  0.75  
-2   1.5e+00  8.4e-02  1.2e+01  1.84e+00   6.385916190e+01   5.448028326e+01   9.6e-02  1.14  
-3   1.3e-01  7.4e-03  7.0e+00  1.20e+00   5.149598022e+01   5.075796846e+01   8.4e-03  1.66  
-4   5.3e-03  2.9e-04  9.6e-01  1.04e+00   4.982397726e+01   4.979559304e+01   3.3e-04  2.22  
-5   8.3e-05  4.6e-06  1.1e-01  1.00e+00   4.976182785e+01   4.976138160e+01   5.3e-06  2.75  
-6   2.9e-08  1.6e-09  2.2e-03  1.00e+00   4.976081210e+01   4.976081194e+01   1.9e-09  3.31  
-Interior-point optimizer terminated. Time: 3.31. 
+1   3.5e+00  2.0e-01  1.4e+01  -8.74e-02  1.133696912e+02   8.101760124e+01   2.2e-01  0.74  
+2   1.5e+00  8.4e-02  1.2e+01  1.84e+00   6.385916190e+01   5.448028326e+01   9.6e-02  1.13  
+3   1.3e-01  7.4e-03  7.0e+00  1.20e+00   5.149598022e+01   5.075796846e+01   8.4e-03  1.57  
+4   5.3e-03  2.9e-04  9.6e-01  1.04e+00   4.982397726e+01   4.979559304e+01   3.3e-04  2.01  
+5   8.3e-05  4.6e-06  1.1e-01  1.00e+00   4.976182785e+01   4.976138160e+01   5.3e-06  2.41  
+6   2.9e-08  1.6e-09  2.2e-03  1.00e+00   4.976081210e+01   4.976081194e+01   1.9e-09  2.85  
+Interior-point optimizer terminated. Time: 2.86. 
 
-Optimizer terminated. Time: 3.31    
+Optimizer terminated. Time: 2.86    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 4.9760812096e+01    nrm: 1e+02    Viol.  con: 8e-08    var: 0e+00    barvar: 0e+00  
-  Dual.    obj: 4.9760811938e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 2e-09  
+  Dual.    obj: 4.9760811938e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 2e-09  
 Optimizer summary
-  Optimizer                 -                        time: 3.31    
-    Interior-point          - iterations : 6         time: 3.31    
+  Optimizer                 -                        time: 2.86    
+    Interior-point          - iterations : 6         time: 2.86    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -296,8 +364,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +49.7608
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+
+     5
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -310,7 +404,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -319,10 +413,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -338,24 +429,24 @@ Factor     - nonzeros before factor : 6.50e+04          after factor           :
 Factor     - dense dim.             : 0                 flops                  : 1.11e+09        
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
 0   2.9e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
-1   6.5e+00  2.0e-01  1.2e+01  -5.16e-01  1.764429871e+02   1.299751622e+02   2.2e-01  0.74  
-2   3.0e+00  8.9e-02  1.2e+01  1.96e+00   9.066090369e+01   7.789066838e+01   1.0e-01  1.13  
+1   6.5e+00  2.0e-01  1.2e+01  -5.16e-01  1.764429871e+02   1.299751622e+02   2.2e-01  0.75  
+2   3.0e+00  8.9e-02  1.2e+01  1.96e+00   9.066090369e+01   7.789066838e+01   1.0e-01  1.14  
 3   3.8e-01  1.1e-02  4.8e+00  1.23e+00   7.202018600e+01   7.062419249e+01   1.3e-02  1.57  
-4   1.1e-02  3.5e-04  7.6e-01  1.08e+00   6.810439660e+01   6.806353158e+01   4.0e-04  1.99  
-5   5.7e-05  1.7e-06  5.6e-02  1.00e+00   6.799468607e+01   6.799448225e+01   2.0e-06  2.40  
-6   2.2e-08  6.5e-10  1.1e-03  1.00e+00   6.799412746e+01   6.799412738e+01   7.5e-10  2.84  
-Interior-point optimizer terminated. Time: 2.84. 
+4   1.1e-02  3.5e-04  7.6e-01  1.08e+00   6.810439660e+01   6.806353158e+01   4.0e-04  2.00  
+5   5.7e-05  1.7e-06  5.6e-02  1.00e+00   6.799468607e+01   6.799448225e+01   2.0e-06  2.41  
+6   2.2e-08  6.5e-10  1.1e-03  1.00e+00   6.799412746e+01   6.799412738e+01   7.5e-10  2.85  
+Interior-point optimizer terminated. Time: 2.85. 
 
-Optimizer terminated. Time: 2.84    
+Optimizer terminated. Time: 2.85    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 6.7994127457e+01    nrm: 2e+02    Viol.  con: 7e-08    var: 0e+00    barvar: 0e+00  
-  Dual.    obj: 6.7994127380e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 1e-09  
+  Dual.    obj: 6.7994127380e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 1e-09  
 Optimizer summary
-  Optimizer                 -                        time: 2.84    
-    Interior-point          - iterations : 6         time: 2.84    
+  Optimizer                 -                        time: 2.85    
+    Interior-point          - iterations : 6         time: 2.85    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -370,8 +461,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +67.9941
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+
+     6
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -384,7 +501,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -393,10 +510,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -413,24 +527,24 @@ Factor     - dense dim.             : 0                 flops                  :
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
 0   4.0e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
 1   9.0e+00  2.0e-01  1.2e+01  -6.00e-01  1.977794939e+02   1.461487021e+02   2.2e-01  0.74  
-2   4.1e+00  9.0e-02  1.2e+01  2.01e+00   9.760241352e+01   8.398198012e+01   1.0e-01  1.13  
-3   4.3e-01  9.3e-03  5.3e+00  1.23e+00   7.668990063e+01   7.548096360e+01   1.1e-02  1.57  
-4   2.7e-02  6.0e-04  1.1e+00  1.07e+00   7.328833182e+01   7.321346377e+01   6.9e-04  2.00  
-5   7.2e-04  1.6e-05  1.6e-01  1.00e+00   7.308219081e+01   7.308024722e+01   1.8e-05  2.41  
-6   9.1e-07  2.0e-08  6.0e-03  1.00e+00   7.307640758e+01   7.307640509e+01   2.3e-08  2.84  
-7   2.2e-09  8.4e-11  2.3e-04  1.00e+00   7.307640040e+01   7.307640040e+01   3.4e-11  3.24  
-Interior-point optimizer terminated. Time: 3.24. 
+2   4.1e+00  9.0e-02  1.2e+01  2.01e+00   9.760241352e+01   8.398198012e+01   1.0e-01  1.14  
+3   4.3e-01  9.3e-03  5.3e+00  1.23e+00   7.668990063e+01   7.548096360e+01   1.1e-02  1.59  
+4   2.7e-02  6.0e-04  1.1e+00  1.07e+00   7.328833182e+01   7.321346377e+01   6.9e-04  2.03  
+5   7.2e-04  1.6e-05  1.6e-01  1.00e+00   7.308219081e+01   7.308024722e+01   1.8e-05  2.44  
+6   9.1e-07  2.0e-08  6.0e-03  1.00e+00   7.307640758e+01   7.307640509e+01   2.3e-08  2.88  
+7   2.2e-09  8.4e-11  2.3e-04  1.00e+00   7.307640040e+01   7.307640040e+01   3.4e-11  3.28  
+Interior-point optimizer terminated. Time: 3.29. 
 
-Optimizer terminated. Time: 3.24    
+Optimizer terminated. Time: 3.29    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 7.3076400400e+01    nrm: 3e+02    Viol.  con: 7e-09    var: 0e+00    barvar: 0e+00  
-  Dual.    obj: 7.3076400396e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 1e-10  
+  Dual.    obj: 7.3076400396e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 1e-10  
 Optimizer summary
-  Optimizer                 -                        time: 3.24    
-    Interior-point          - iterations : 7         time: 3.24    
+  Optimizer                 -                        time: 3.29    
+    Interior-point          - iterations : 7         time: 3.29    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -445,8 +559,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +73.0764
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+
+     7
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -459,7 +599,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -468,10 +608,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -487,25 +624,25 @@ Factor     - nonzeros before factor : 6.50e+04          after factor           :
 Factor     - dense dim.             : 0                 flops                  : 1.11e+09        
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
 0   2.8e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
-1   6.2e+00  2.0e-01  1.3e+01  -4.47e-01  1.570499464e+02   1.142821778e+02   2.3e-01  0.75  
+1   6.2e+00  2.0e-01  1.3e+01  -4.47e-01  1.570499464e+02   1.142821778e+02   2.3e-01  0.74  
 2   2.8e+00  8.9e-02  1.2e+01  1.97e+00   8.119860070e+01   6.940968540e+01   1.0e-01  1.14  
-3   2.6e-01  8.3e-03  6.7e+00  1.21e+00   6.477653743e+01   6.381407740e+01   9.5e-03  1.59  
-4   1.8e-02  5.6e-04  1.2e+00  1.05e+00   6.235461059e+01   6.229188706e+01   6.4e-04  2.03  
-5   5.6e-04  1.8e-05  1.9e-01  1.00e+00   6.220122302e+01   6.219924802e+01   2.0e-05  2.43  
-6   7.8e-06  2.5e-07  2.3e-02  1.00e+00   6.219595552e+01   6.219592779e+01   2.8e-07  2.87  
-7   2.6e-10  1.6e-11  2.3e-10  1.00e+00   6.219588318e+01   6.219588318e+01   1.3e-11  3.31  
-Interior-point optimizer terminated. Time: 3.32. 
+3   2.6e-01  8.3e-03  6.7e+00  1.21e+00   6.477653743e+01   6.381407740e+01   9.5e-03  1.58  
+4   1.8e-02  5.6e-04  1.2e+00  1.05e+00   6.235461059e+01   6.229188706e+01   6.4e-04  2.02  
+5   5.6e-04  1.8e-05  1.9e-01  1.00e+00   6.220122302e+01   6.219924802e+01   2.0e-05  2.42  
+6   7.8e-06  2.5e-07  2.3e-02  1.00e+00   6.219595552e+01   6.219592779e+01   2.8e-07  2.86  
+7   2.6e-10  1.6e-11  2.3e-10  1.00e+00   6.219588318e+01   6.219588318e+01   1.3e-11  3.29  
+Interior-point optimizer terminated. Time: 3.30. 
 
-Optimizer terminated. Time: 3.32    
+Optimizer terminated. Time: 3.30    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 6.2195883181e+01    nrm: 2e+02    Viol.  con: 8e-10    var: 0e+00    barvar: 0e+00  
-  Dual.    obj: 6.2195883180e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 2e-11  
+  Dual.    obj: 6.2195883180e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 2e-11  
 Optimizer summary
-  Optimizer                 -                        time: 3.32    
-    Interior-point          - iterations : 7         time: 3.32    
+  Optimizer                 -                        time: 3.30    
+    Interior-point          - iterations : 7         time: 3.30    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -520,8 +657,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +62.1959
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+    4.1391
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+
+     8
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -534,7 +697,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -543,10 +706,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -564,23 +724,23 @@ ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU
 0   2.0e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
 1   4.5e+00  1.9e-01  1.3e+01  -2.01e-01  1.239121535e+02   8.948435480e+01   2.2e-01  0.75  
 2   1.9e+00  8.2e-02  1.2e+01  1.85e+00   6.888282905e+01   5.920669820e+01   9.4e-02  1.14  
-3   1.8e-01  7.6e-03  7.8e+00  1.19e+00   5.582739572e+01   5.502713754e+01   8.7e-03  1.59  
-4   1.5e-02  6.7e-04  1.4e+00  1.04e+00   5.403126948e+01   5.396332294e+01   7.6e-04  2.04  
-5   1.0e-03  4.5e-05  3.3e-01  1.00e+00   5.388513595e+01   5.388053065e+01   5.2e-05  2.44  
-6   7.1e-06  3.1e-07  3.2e-02  1.00e+00   5.387394923e+01   5.387391798e+01   3.5e-07  2.89  
-7   2.7e-10  1.1e-11  2.0e-10  1.00e+00   5.387387618e+01   5.387387618e+01   1.2e-11  3.34  
-Interior-point optimizer terminated. Time: 3.35. 
+3   1.8e-01  7.6e-03  7.8e+00  1.19e+00   5.582739572e+01   5.502713754e+01   8.7e-03  1.58  
+4   1.5e-02  6.7e-04  1.4e+00  1.04e+00   5.403126948e+01   5.396332294e+01   7.6e-04  2.02  
+5   1.0e-03  4.5e-05  3.3e-01  1.00e+00   5.388513595e+01   5.388053065e+01   5.2e-05  2.42  
+6   7.1e-06  3.1e-07  3.2e-02  1.00e+00   5.387394923e+01   5.387391798e+01   3.5e-07  2.86  
+7   2.7e-10  1.1e-11  2.0e-10  1.00e+00   5.387387618e+01   5.387387618e+01   1.2e-11  3.30  
+Interior-point optimizer terminated. Time: 3.30. 
 
-Optimizer terminated. Time: 3.35    
+Optimizer terminated. Time: 3.31    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 5.3873876184e+01    nrm: 2e+02    Viol.  con: 8e-10    var: 0e+00    barvar: 0e+00  
-  Dual.    obj: 5.3873876183e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 2e-11  
+  Dual.    obj: 5.3873876183e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 2e-11  
 Optimizer summary
-  Optimizer                 -                        time: 3.35    
-    Interior-point          - iterations : 7         time: 3.35    
+  Optimizer                 -                        time: 3.31    
+    Interior-point          - iterations : 7         time: 3.30    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -595,8 +755,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +53.8739
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+    4.1391
+    4.1456
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+
+     9
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -609,7 +795,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -618,10 +804,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -637,24 +820,24 @@ Factor     - nonzeros before factor : 6.50e+04          after factor           :
 Factor     - dense dim.             : 0                 flops                  : 1.11e+09        
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
 0   1.8e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
-1   4.0e+00  1.9e-01  1.3e+01  -1.96e-01  1.258812665e+02   9.184347235e+01   2.2e-01  0.75  
+1   4.0e+00  1.9e-01  1.3e+01  -1.96e-01  1.258812665e+02   9.184347235e+01   2.2e-01  0.74  
 2   1.7e+00  8.1e-02  1.1e+01  1.79e+00   7.270090999e+01   6.279567714e+01   9.3e-02  1.14  
 3   1.8e-01  8.6e-03  6.8e+00  1.20e+00   5.866249379e+01   5.772445221e+01   9.9e-03  1.58  
 4   1.5e-02  7.0e-04  1.5e+00  1.05e+00   5.650885111e+01   5.643455547e+01   8.1e-04  2.02  
-5   1.8e-03  8.8e-05  4.5e-01  1.00e+00   5.635685677e+01   5.634770262e+01   1.0e-04  2.44  
-6   1.8e-07  8.5e-09  1.6e-07  1.00e+00   5.633471607e+01   5.633471519e+01   9.7e-09  2.88  
-Interior-point optimizer terminated. Time: 2.89. 
+5   1.8e-03  8.8e-05  4.5e-01  1.00e+00   5.635685677e+01   5.634770262e+01   1.0e-04  2.43  
+6   1.8e-07  8.5e-09  1.6e-07  1.00e+00   5.633471607e+01   5.633471519e+01   9.7e-09  2.87  
+Interior-point optimizer terminated. Time: 2.87. 
 
-Optimizer terminated. Time: 2.89    
+Optimizer terminated. Time: 2.87    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 5.6334716074e+01    nrm: 2e+02    Viol.  con: 6e-07    var: 0e+00    barvar: 0e+00  
-  Dual.    obj: 5.6334715186e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 1e-08  
+  Dual.    obj: 5.6334715186e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 1e-08  
 Optimizer summary
-  Optimizer                 -                        time: 2.89    
-    Interior-point          - iterations : 6         time: 2.89    
+  Optimizer                 -                        time: 2.87    
+    Interior-point          - iterations : 6         time: 2.87    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -669,8 +852,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +56.3347
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+    4.1391
+    4.1456
+    3.7132
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+
+    10
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -683,7 +892,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -692,10 +901,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -712,22 +918,22 @@ Factor     - dense dim.             : 0                 flops                  :
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
 0   2.5e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
 1   5.7e+00  2.0e-01  1.3e+01  -3.37e-01  1.409966152e+02   1.014321493e+02   2.3e-01  0.74  
-2   2.6e+00  9.2e-02  1.2e+01  1.97e+00   7.370157503e+01   6.242790267e+01   1.0e-01  1.13  
-3   2.4e-01  8.5e-03  5.1e+00  1.22e+00   5.864038538e+01   5.772791814e+01   9.7e-03  1.54  
-4   2.3e-03  8.2e-05  5.4e-01  1.05e+00   5.633560681e+01   5.632699235e+01   9.3e-05  1.98  
-5   2.8e-07  9.8e-09  1.8e-07  1.00e+00   5.631453270e+01   5.631453166e+01   1.1e-08  2.41  
-Interior-point optimizer terminated. Time: 2.41. 
+2   2.6e+00  9.2e-02  1.2e+01  1.97e+00   7.370157503e+01   6.242790267e+01   1.0e-01  1.14  
+3   2.4e-01  8.5e-03  5.1e+00  1.22e+00   5.864038538e+01   5.772791814e+01   9.7e-03  1.57  
+4   2.3e-03  8.2e-05  5.4e-01  1.05e+00   5.633560681e+01   5.632699235e+01   9.3e-05  2.01  
+5   2.8e-07  9.8e-09  1.8e-07  1.00e+00   5.631453270e+01   5.631453166e+01   1.1e-08  2.45  
+Interior-point optimizer terminated. Time: 2.45. 
 
-Optimizer terminated. Time: 2.41    
+Optimizer terminated. Time: 2.45    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 5.6314532697e+01    nrm: 2e+02    Viol.  con: 8e-07    var: 0e+00    barvar: 1e-15  
-  Dual.    obj: 5.6314531660e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 1e-08  
+  Dual.    obj: 5.6314531660e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 1e-08  
 Optimizer summary
-  Optimizer                 -                        time: 2.41    
-    Interior-point          - iterations : 5         time: 2.41    
+  Optimizer                 -                        time: 2.45    
+    Interior-point          - iterations : 5         time: 2.45    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -742,8 +948,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +56.3145
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+    4.1391
+    4.1456
+    3.7132
+    3.2916
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+
+    11
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -756,7 +988,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -765,10 +997,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -784,25 +1013,25 @@ Factor     - nonzeros before factor : 6.50e+04          after factor           :
 Factor     - dense dim.             : 0                 flops                  : 1.11e+09        
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
 0   2.6e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
-1   5.6e+00  1.9e-01  1.2e+01  -4.49e-01  1.627204437e+02   1.213814854e+02   2.1e-01  0.74  
-2   2.3e+00  7.8e-02  1.1e+01  1.82e+00   9.065439852e+01   7.949149063e+01   8.9e-02  1.13  
-3   3.0e-01  1.0e-02  5.3e+00  1.21e+00   7.305766757e+01   7.178735807e+01   1.2e-02  1.57  
-4   6.7e-02  2.2e-03  2.2e+00  1.07e+00   7.017947245e+01   6.990856366e+01   2.6e-03  1.98  
-5   3.3e-03  1.1e-04  4.8e-01  1.01e+00   6.948075374e+01   6.946733618e+01   1.3e-04  2.39  
-6   1.2e-05  3.9e-07  2.9e-02  1.00e+00   6.944159732e+01   6.944155038e+01   4.5e-07  2.83  
-7   3.5e-10  2.1e-11  3.0e-10  1.00e+00   6.944146147e+01   6.944146147e+01   1.8e-11  3.27  
-Interior-point optimizer terminated. Time: 3.27. 
+1   5.6e+00  1.9e-01  1.2e+01  -4.49e-01  1.627204437e+02   1.213814854e+02   2.1e-01  0.75  
+2   2.3e+00  7.8e-02  1.1e+01  1.82e+00   9.065439852e+01   7.949149063e+01   8.9e-02  1.15  
+3   3.0e-01  1.0e-02  5.3e+00  1.21e+00   7.305766757e+01   7.178735807e+01   1.2e-02  1.59  
+4   6.7e-02  2.2e-03  2.2e+00  1.07e+00   7.017947245e+01   6.990856366e+01   2.6e-03  2.01  
+5   3.3e-03  1.1e-04  4.8e-01  1.01e+00   6.948075374e+01   6.946733618e+01   1.3e-04  2.43  
+6   1.2e-05  3.9e-07  2.9e-02  1.00e+00   6.944159732e+01   6.944155038e+01   4.5e-07  2.88  
+7   3.5e-10  2.1e-11  3.0e-10  1.00e+00   6.944146147e+01   6.944146147e+01   1.8e-11  3.32  
+Interior-point optimizer terminated. Time: 3.32. 
 
-Optimizer terminated. Time: 3.27    
+Optimizer terminated. Time: 3.32    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 6.9441461474e+01    nrm: 2e+02    Viol.  con: 1e-09    var: 0e+00    barvar: 6e-15  
-  Dual.    obj: 6.9441461472e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 3e-11  
+  Dual.    obj: 6.9441461472e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 3e-11  
 Optimizer summary
-  Optimizer                 -                        time: 3.27    
-    Interior-point          - iterations : 7         time: 3.27    
+  Optimizer                 -                        time: 3.32    
+    Interior-point          - iterations : 7         time: 3.32    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -817,8 +1046,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +69.4415
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+    4.1391
+    4.1456
+    3.7132
+    3.2916
+    4.1685
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+
+    12
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -831,7 +1086,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -840,10 +1095,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -858,25 +1110,25 @@ Factor     - ML order time          : 0.00              GP order time          :
 Factor     - nonzeros before factor : 6.50e+04          after factor           : 6.50e+04        
 Factor     - dense dim.             : 0                 flops                  : 1.11e+09        
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
-0   1.9e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.31  
-1   4.3e+00  1.9e-01  1.3e+01  -5.21e-02  1.118658080e+02   8.035241768e+01   2.2e-01  0.75  
-2   1.9e+00  8.4e-02  1.2e+01  1.80e+00   6.398689306e+01   5.457360482e+01   9.6e-02  1.14  
-3   1.7e-01  7.8e-03  6.3e+00  1.20e+00   5.158850993e+01   5.080923386e+01   8.9e-03  1.57  
-4   3.8e-03  1.7e-04  6.8e-01  1.04e+00   4.978295337e+01   4.976632091e+01   2.0e-04  1.99  
-5   2.4e-05  1.1e-06  5.5e-02  1.00e+00   4.974624397e+01   4.974613806e+01   1.2e-06  2.40  
-6   1.9e-08  8.5e-10  1.5e-03  1.00e+00   4.974600620e+01   4.974600612e+01   9.7e-10  2.84  
-Interior-point optimizer terminated. Time: 2.84. 
+0   1.9e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
+1   4.3e+00  1.9e-01  1.3e+01  -5.21e-02  1.118658080e+02   8.035241768e+01   2.2e-01  0.74  
+2   1.9e+00  8.4e-02  1.2e+01  1.80e+00   6.398689306e+01   5.457360482e+01   9.6e-02  1.13  
+3   1.7e-01  7.8e-03  6.3e+00  1.20e+00   5.158850993e+01   5.080923386e+01   8.9e-03  1.56  
+4   3.8e-03  1.7e-04  6.8e-01  1.04e+00   4.978295337e+01   4.976632091e+01   2.0e-04  1.98  
+5   2.4e-05  1.1e-06  5.5e-02  1.00e+00   4.974624397e+01   4.974613806e+01   1.2e-06  2.39  
+6   1.9e-08  8.5e-10  1.5e-03  1.00e+00   4.974600620e+01   4.974600612e+01   9.7e-10  2.83  
+Interior-point optimizer terminated. Time: 2.83. 
 
-Optimizer terminated. Time: 2.85    
+Optimizer terminated. Time: 2.83    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 4.9746006203e+01    nrm: 2e+02    Viol.  con: 5e-08    var: 0e+00    barvar: 0e+00  
-  Dual.    obj: 4.9746006121e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 1e-09  
+  Dual.    obj: 4.9746006121e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 1e-09  
 Optimizer summary
-  Optimizer                 -                        time: 2.85    
-    Interior-point          - iterations : 6         time: 2.84    
+  Optimizer                 -                        time: 2.83    
+    Interior-point          - iterations : 6         time: 2.83    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -891,8 +1143,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +49.746
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+    4.1391
+    4.1456
+    3.7132
+    3.2916
+    4.1685
+    3.6779
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+
+    13
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -905,7 +1183,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -914,10 +1192,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -933,24 +1208,24 @@ Factor     - nonzeros before factor : 6.50e+04          after factor           :
 Factor     - dense dim.             : 0                 flops                  : 1.11e+09        
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
 0   1.8e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
-1   4.0e+00  2.0e-01  1.4e+01  -3.46e-02  1.069777740e+02   7.591459860e+01   2.2e-01  0.74  
-2   1.7e+00  8.7e-02  1.2e+01  1.85e+00   6.029028772e+01   5.100328133e+01   9.9e-02  1.13  
+1   4.0e+00  2.0e-01  1.4e+01  -3.46e-02  1.069777740e+02   7.591459860e+01   2.2e-01  0.75  
+2   1.7e+00  8.7e-02  1.2e+01  1.85e+00   6.029028772e+01   5.100328133e+01   9.9e-02  1.14  
 3   1.3e-01  6.3e-03  8.8e+00  1.20e+00   4.835914479e+01   4.775145543e+01   7.2e-03  1.57  
-4   1.6e-03  8.0e-05  4.7e-01  1.03e+00   4.699084469e+01   4.698338156e+01   9.1e-05  2.00  
-5   1.1e-06  5.4e-08  3.2e-02  1.00e+00   4.697466585e+01   4.697466067e+01   6.2e-08  2.44  
-6   2.2e-10  4.7e-11  7.0e-11  1.00e+00   4.697465450e+01   4.697465450e+01   4.3e-12  2.87  
-Interior-point optimizer terminated. Time: 2.87. 
+4   1.6e-03  8.0e-05  4.7e-01  1.03e+00   4.699084469e+01   4.698338156e+01   9.1e-05  2.01  
+5   1.1e-06  5.4e-08  3.2e-02  1.00e+00   4.697466585e+01   4.697466067e+01   6.2e-08  2.46  
+6   2.2e-10  4.7e-11  7.0e-11  1.00e+00   4.697465450e+01   4.697465450e+01   4.3e-12  2.89  
+Interior-point optimizer terminated. Time: 2.89. 
 
-Optimizer terminated. Time: 2.87    
+Optimizer terminated. Time: 2.89    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 4.6974654504e+01    nrm: 1e+02    Viol.  con: 6e-10    var: 0e+00    barvar: 6e-15  
-  Dual.    obj: 4.6974654503e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 6e-11  
+  Dual.    obj: 4.6974654503e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 6e-11  
 Optimizer summary
-  Optimizer                 -                        time: 2.87    
-    Interior-point          - iterations : 6         time: 2.87    
+  Optimizer                 -                        time: 2.89    
+    Interior-point          - iterations : 6         time: 2.89    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -965,8 +1240,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +46.9747
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+    4.1391
+    4.1456
+    3.7132
+    3.2916
+    4.1685
+    3.6779
+    3.7311
+         0
+         0
+         0
+         0
+         0
+         0
+         0
+
+    14
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -979,7 +1280,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -988,10 +1289,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -1008,23 +1306,23 @@ Factor     - dense dim.             : 0                 flops                  :
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
 0   2.3e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
 1   5.1e+00  2.0e-01  1.2e+01  -4.12e-01  1.533088162e+02   1.117962248e+02   2.2e-01  0.74  
-2   2.2e+00  8.6e-02  1.2e+01  1.93e+00   8.071928860e+01   6.936712938e+01   9.9e-02  1.13  
-3   2.3e-01  8.7e-03  6.1e+00  1.21e+00   6.458916527e+01   6.358108832e+01   1.0e-02  1.56  
-4   1.7e-02  6.4e-04  1.2e+00  1.06e+00   6.205911518e+01   6.198755512e+01   7.3e-04  1.99  
-5   5.1e-04  2.0e-05  2.1e-01  1.00e+00   6.188237473e+01   6.188019392e+01   2.2e-05  2.40  
-6   2.2e-07  8.4e-09  1.5e-07  1.00e+00   6.187665863e+01   6.187665768e+01   9.6e-09  2.83  
-Interior-point optimizer terminated. Time: 2.84. 
+2   2.2e+00  8.6e-02  1.2e+01  1.93e+00   8.071928860e+01   6.936712938e+01   9.9e-02  1.14  
+3   2.3e-01  8.7e-03  6.1e+00  1.21e+00   6.458916527e+01   6.358108832e+01   1.0e-02  1.57  
+4   1.7e-02  6.4e-04  1.2e+00  1.06e+00   6.205911518e+01   6.198755512e+01   7.3e-04  2.01  
+5   5.1e-04  2.0e-05  2.1e-01  1.00e+00   6.188237473e+01   6.188019392e+01   2.2e-05  2.42  
+6   2.2e-07  8.4e-09  1.5e-07  1.00e+00   6.187665863e+01   6.187665768e+01   9.6e-09  2.86  
+Interior-point optimizer terminated. Time: 2.86. 
 
-Optimizer terminated. Time: 2.84    
+Optimizer terminated. Time: 2.87    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 6.1876658630e+01    nrm: 2e+02    Viol.  con: 8e-07    var: 0e+00    barvar: 0e+00  
-  Dual.    obj: 6.1876657685e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 1e-08  
+  Dual.    obj: 6.1876657685e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 1e-08  
 Optimizer summary
-  Optimizer                 -                        time: 2.84    
-    Interior-point          - iterations : 6         time: 2.84    
+  Optimizer                 -                        time: 2.87    
+    Interior-point          - iterations : 6         time: 2.86    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -1039,8 +1337,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +61.8767
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+    4.1391
+    4.1456
+    3.7132
+    3.2916
+    4.1685
+    3.6779
+    3.7311
+    3.7065
+         0
+         0
+         0
+         0
+         0
+         0
+
+    15
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -1053,7 +1377,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -1062,10 +1386,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -1082,22 +1403,22 @@ Factor     - dense dim.             : 0                 flops                  :
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
 0   1.8e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
 1   4.1e+00  2.0e-01  1.3e+01  -2.45e-01  1.298612898e+02   9.363566387e+01   2.2e-01  0.74  
-2   1.8e+00  8.8e-02  1.2e+01  1.89e+00   7.104897322e+01   6.056225321e+01   1.0e-01  1.14  
+2   1.8e+00  8.8e-02  1.2e+01  1.89e+00   7.104897322e+01   6.056225321e+01   1.0e-01  1.13  
 3   1.7e-01  8.2e-03  6.0e+00  1.21e+00   5.678732782e+01   5.592036065e+01   9.3e-03  1.57  
 4   2.8e-03  1.4e-04  5.8e-01  1.05e+00   5.465141071e+01   5.463747806e+01   1.6e-04  2.00  
 5   6.1e-05  2.9e-06  8.3e-02  1.00e+00   5.461918055e+01   5.461888292e+01   3.3e-06  2.41  
 6   3.3e-08  1.6e-09  2.1e-03  1.00e+00   5.461847510e+01   5.461847494e+01   1.8e-09  2.85  
 Interior-point optimizer terminated. Time: 2.85. 
 
-Optimizer terminated. Time: 2.86    
+Optimizer terminated. Time: 2.85    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 5.4618475103e+01    nrm: 1e+02    Viol.  con: 1e-07    var: 0e+00    barvar: 0e+00  
-  Dual.    obj: 5.4618474938e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 2e-09  
+  Dual.    obj: 5.4618474938e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 2e-09  
 Optimizer summary
-  Optimizer                 -                        time: 2.86    
+  Optimizer                 -                        time: 2.85    
     Interior-point          - iterations : 6         time: 2.85    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
@@ -1113,8 +1434,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +54.6185
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+    4.1391
+    4.1456
+    3.7132
+    3.2916
+    4.1685
+    3.6779
+    3.7311
+    3.7065
+    3.6932
+         0
+         0
+         0
+         0
+         0
+
+    16
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -1127,7 +1474,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -1136,10 +1483,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -1155,24 +1499,24 @@ Factor     - nonzeros before factor : 6.50e+04          after factor           :
 Factor     - dense dim.             : 0                 flops                  : 1.11e+09        
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
 0   2.4e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
-1   5.4e+00  2.0e-01  1.2e+01  -5.22e-01  1.744468477e+02   1.278026941e+02   2.3e-01  0.75  
-2   2.4e+00  8.8e-02  1.2e+01  1.99e+00   8.782101056e+01   7.549886110e+01   1.0e-01  1.14  
+1   5.4e+00  2.0e-01  1.2e+01  -5.22e-01  1.744468477e+02   1.278026941e+02   2.3e-01  0.74  
+2   2.4e+00  8.8e-02  1.2e+01  1.99e+00   8.782101056e+01   7.549886110e+01   1.0e-01  1.13  
 3   3.1e-01  1.1e-02  5.0e+00  1.21e+00   7.051150416e+01   6.914777376e+01   1.3e-02  1.57  
-4   8.4e-03  3.1e-04  7.2e-01  1.08e+00   6.672316329e+01   6.668767366e+01   3.5e-04  2.00  
-5   1.0e-04  3.7e-06  8.2e-02  1.00e+00   6.662805456e+01   6.662762982e+01   4.2e-06  2.40  
-6   2.6e-08  9.6e-10  1.5e-03  1.00e+00   6.662689525e+01   6.662689514e+01   1.1e-09  2.94  
-Interior-point optimizer terminated. Time: 2.95. 
+4   8.4e-03  3.1e-04  7.2e-01  1.08e+00   6.672316329e+01   6.668767366e+01   3.5e-04  1.99  
+5   1.0e-04  3.7e-06  8.2e-02  1.00e+00   6.662805456e+01   6.662762982e+01   4.2e-06  2.39  
+6   2.6e-08  9.6e-10  1.5e-03  1.00e+00   6.662689525e+01   6.662689514e+01   1.1e-09  2.83  
+Interior-point optimizer terminated. Time: 2.83. 
 
-Optimizer terminated. Time: 2.95    
+Optimizer terminated. Time: 2.83    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 6.6626895248e+01    nrm: 2e+02    Viol.  con: 9e-08    var: 0e+00    barvar: 0e+00  
-  Dual.    obj: 6.6626895135e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 2e-09  
+  Dual.    obj: 6.6626895135e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 2e-09  
 Optimizer summary
-  Optimizer                 -                        time: 2.95    
-    Interior-point          - iterations : 6         time: 2.95    
+  Optimizer                 -                        time: 2.83    
+    Interior-point          - iterations : 6         time: 2.83    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -1187,8 +1531,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +66.6269
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+    4.1391
+    4.1456
+    3.7132
+    3.2916
+    4.1685
+    3.6779
+    3.7311
+    3.7065
+    3.6932
+    3.6721
+         0
+         0
+         0
+         0
+
+    17
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -1201,7 +1571,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -1210,10 +1580,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -1223,30 +1590,30 @@ Optimizer  - Constraints            : 360
 Optimizer  - Cones                  : 0
 Optimizer  - Scalar variables       : 0                 conic                  : 0               
 Optimizer  - Semi-definite variables: 1                 scalarized             : 7260            
-Factor     - setup time             : 0.13              dense det. time        : 0.00            
+Factor     - setup time             : 0.10              dense det. time        : 0.00            
 Factor     - ML order time          : 0.00              GP order time          : 0.00            
 Factor     - nonzeros before factor : 6.50e+04          after factor           : 6.50e+04        
 Factor     - dense dim.             : 0                 flops                  : 1.11e+09        
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
-0   1.6e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.41  
-1   3.6e+00  1.9e-01  1.4e+01  -6.58e-03  1.064801006e+02   7.614169597e+01   2.2e-01  0.97  
-2   1.5e+00  8.2e-02  1.2e+01  1.80e+00   6.140072456e+01   5.248042892e+01   9.4e-02  1.48  
-3   1.4e-01  7.6e-03  6.5e+00  1.20e+00   4.968385944e+01   4.893689730e+01   8.7e-03  1.94  
-4   2.6e-03  1.4e-04  6.8e-01  1.04e+00   4.798551893e+01   4.797238865e+01   1.6e-04  2.38  
-5   6.6e-06  3.6e-07  3.5e-02  1.00e+00   4.795688835e+01   4.795685443e+01   4.1e-07  2.81  
-6   9.7e-10  5.3e-11  9.7e-10  1.00e+00   4.795681260e+01   4.795681259e+01   6.0e-11  3.25  
-Interior-point optimizer terminated. Time: 3.25. 
+0   1.6e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
+1   3.6e+00  1.9e-01  1.4e+01  -6.58e-03  1.064801006e+02   7.614169597e+01   2.2e-01  0.74  
+2   1.5e+00  8.2e-02  1.2e+01  1.80e+00   6.140072456e+01   5.248042892e+01   9.4e-02  1.13  
+3   1.4e-01  7.6e-03  6.5e+00  1.20e+00   4.968385944e+01   4.893689730e+01   8.7e-03  1.56  
+4   2.6e-03  1.4e-04  6.8e-01  1.04e+00   4.798551893e+01   4.797238865e+01   1.6e-04  2.00  
+5   6.6e-06  3.6e-07  3.5e-02  1.00e+00   4.795688835e+01   4.795685443e+01   4.1e-07  2.43  
+6   9.7e-10  5.3e-11  9.7e-10  1.00e+00   4.795681260e+01   4.795681259e+01   6.0e-11  2.86  
+Interior-point optimizer terminated. Time: 2.87. 
 
-Optimizer terminated. Time: 3.25    
+Optimizer terminated. Time: 2.87    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 4.7956812596e+01    nrm: 1e+02    Viol.  con: 3e-09    var: 0e+00    barvar: 5e-15  
-  Dual.    obj: 4.7956812591e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 7e-11  
+  Dual.    obj: 4.7956812591e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 7e-11  
 Optimizer summary
-  Optimizer                 -                        time: 3.25    
-    Interior-point          - iterations : 6         time: 3.25    
+  Optimizer                 -                        time: 2.87    
+    Interior-point          - iterations : 6         time: 2.87    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -1261,8 +1628,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +47.9568
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+    4.1391
+    4.1456
+    3.7132
+    3.2916
+    4.1685
+    3.6779
+    3.7311
+    3.7065
+    3.6932
+    3.6721
+    3.7051
+         0
+         0
+         0
+
+    18
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -1275,7 +1668,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -1284,10 +1677,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -1311,15 +1701,15 @@ ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU
 6   3.1e-10  6.4e-11  1.1e-10  1.00e+00   4.446856878e+01   4.446856877e+01   6.7e-12  2.84  
 Interior-point optimizer terminated. Time: 2.84. 
 
-Optimizer terminated. Time: 2.84    
+Optimizer terminated. Time: 2.85    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 4.4468568776e+01    nrm: 1e+02    Viol.  con: 1e-09    var: 0e+00    barvar: 0e+00  
-  Dual.    obj: 4.4468568775e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 8e-11  
+  Dual.    obj: 4.4468568775e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 8e-11  
 Optimizer summary
-  Optimizer                 -                        time: 2.84    
+  Optimizer                 -                        time: 2.85    
     Interior-point          - iterations : 6         time: 2.84    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
@@ -1335,8 +1725,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +44.4686
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+    4.1391
+    4.1456
+    3.7132
+    3.2916
+    4.1685
+    3.6779
+    3.7311
+    3.7065
+    3.6932
+    3.6721
+    3.7051
+    3.6845
+         0
+         0
+
+    19
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -1349,7 +1765,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -1358,10 +1774,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -1379,23 +1792,23 @@ ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU
 0   3.5e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
 1   7.6e+00  1.9e-01  1.1e+01  -6.81e-01  2.367575321e+02   1.792624712e+02   2.1e-01  0.74  
 2   3.3e+00  8.2e-02  1.2e+01  1.90e+00   1.174149470e+02   1.030607797e+02   9.4e-02  1.13  
-3   4.7e-01  1.2e-02  3.9e+00  1.26e+00   9.153132360e+01   8.983495258e+01   1.3e-02  1.56  
+3   4.7e-01  1.2e-02  3.9e+00  1.26e+00   9.153132360e+01   8.983495258e+01   1.3e-02  1.55  
 4   2.5e-02  6.1e-04  8.6e-01  1.09e+00   8.606994114e+01   8.598555199e+01   7.0e-04  1.99  
 5   3.1e-03  7.7e-05  3.1e-01  1.00e+00   8.583840877e+01   8.582777599e+01   8.8e-05  2.39  
-6   3.3e-05  8.1e-07  3.7e-02  1.00e+00   8.580363163e+01   8.580351891e+01   9.3e-07  2.87  
-7   1.6e-09  4.0e-11  7.2e-10  1.00e+00   8.580328311e+01   8.580328311e+01   4.5e-11  3.43  
-Interior-point optimizer terminated. Time: 3.43. 
+6   3.3e-05  8.1e-07  3.7e-02  1.00e+00   8.580363163e+01   8.580351891e+01   9.3e-07  2.83  
+7   1.6e-09  4.0e-11  7.2e-10  1.00e+00   8.580328311e+01   8.580328311e+01   4.5e-11  3.27  
+Interior-point optimizer terminated. Time: 3.27. 
 
-Optimizer terminated. Time: 3.43    
+Optimizer terminated. Time: 3.27    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 8.5803283113e+01    nrm: 3e+02    Viol.  con: 6e-09    var: 0e+00    barvar: 0e+00  
-  Dual.    obj: 8.5803283108e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 8e-11  
+  Dual.    obj: 8.5803283108e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 8e-11  
 Optimizer summary
-  Optimizer                 -                        time: 3.43    
-    Interior-point          - iterations : 7         time: 3.43    
+  Optimizer                 -                        time: 3.27    
+    Interior-point          - iterations : 7         time: 3.27    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -1410,8 +1823,34 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +85.8033
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+    4.1391
+    4.1456
+    3.7132
+    3.2916
+    4.1685
+    3.6779
+    3.7311
+    3.7065
+    3.6932
+    3.6721
+    3.7051
+    3.6845
+    4.1098
+         0
+
+    20
+
  
-Calling Mosek 8.0.0.60: 10800 variables, 360 equality constraints
+Calling Mosek 8.0.0.60: 7261 variables, 360 equality constraints
 ------------------------------------------------------------
 
 MOSEK Version 8.0.0.60 (Build date: 2017-3-8 15:53:11)
@@ -1424,7 +1863,7 @@ Problem
   Type                   : CONIC (conic optimization problem)
   Constraints            : 360             
   Cones                  : 0               
-  Scalar variables       : 3540            
+  Scalar variables       : 1               
   Matrix variables       : 1               
   Integer variables      : 0               
 
@@ -1433,10 +1872,7 @@ Conic interior-point optimizer started.
 Presolve started.
 Linear dependency checker started.
 Linear dependency checker terminated.
-Eliminator started.
-Freed constraints in eliminator : 0
-Eliminator terminated.
-Eliminator - tries                  : 1                 time                   : 0.00            
+Eliminator - tries                  : 0                 time                   : 0.00            
 Lin. dep.  - tries                  : 1                 time                   : 0.00            
 Lin. dep.  - number                 : 0               
 Presolve terminated. Time: 0.00    
@@ -1451,25 +1887,25 @@ Factor     - ML order time          : 0.00              GP order time          :
 Factor     - nonzeros before factor : 6.50e+04          after factor           : 6.50e+04        
 Factor     - dense dim.             : 0                 flops                  : 1.11e+09        
 ITE PFEAS    DFEAS    GFEAS    PRSTATUS   POBJ              DOBJ              MU       TIME  
-0   2.8e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.31  
-1   6.1e+00  2.0e-01  1.2e+01  -5.08e-01  1.723297282e+02   1.267963227e+02   2.2e-01  0.76  
-2   2.7e+00  8.6e-02  1.2e+01  1.96e+00   8.903073672e+01   7.691845868e+01   9.8e-02  1.15  
-3   3.5e-01  1.1e-02  5.1e+00  1.22e+00   7.131069675e+01   6.996099323e+01   1.3e-02  1.60  
-4   1.6e-02  5.2e-04  9.8e-01  1.07e+00   6.761951741e+01   6.755806921e+01   6.0e-04  2.04  
-5   2.5e-03  7.9e-05  3.8e-01  1.00e+00   6.748008265e+01   6.747079459e+01   9.1e-05  2.45  
-6   1.3e-07  4.0e-09  7.3e-08  1.00e+00   6.745502408e+01   6.745502360e+01   4.6e-09  2.89  
-Interior-point optimizer terminated. Time: 2.89. 
+0   2.8e+01  8.8e-01  1.6e+01  0.00e+00   2.400000000e+02   0.000000000e+00   1.0e+00  0.30  
+1   6.1e+00  2.0e-01  1.2e+01  -5.08e-01  1.723297282e+02   1.267963227e+02   2.2e-01  0.74  
+2   2.7e+00  8.6e-02  1.2e+01  1.96e+00   8.903073672e+01   7.691845868e+01   9.8e-02  1.13  
+3   3.5e-01  1.1e-02  5.1e+00  1.22e+00   7.131069675e+01   6.996099323e+01   1.3e-02  1.56  
+4   1.6e-02  5.2e-04  9.8e-01  1.07e+00   6.761951741e+01   6.755806921e+01   6.0e-04  2.00  
+5   2.5e-03  7.9e-05  3.8e-01  1.00e+00   6.748008265e+01   6.747079459e+01   9.1e-05  2.41  
+6   1.3e-07  4.0e-09  7.3e-08  1.00e+00   6.745502408e+01   6.745502360e+01   4.6e-09  2.84  
+Interior-point optimizer terminated. Time: 2.84. 
 
-Optimizer terminated. Time: 2.89    
+Optimizer terminated. Time: 2.84    
 
 Interior-point solution summary
   Problem status  : PRIMAL_AND_DUAL_FEASIBLE
   Solution status : OPTIMAL
   Primal.  obj: 6.7455024076e+01    nrm: 2e+02    Viol.  con: 4e-07    var: 0e+00    barvar: 1e-14  
-  Dual.    obj: 6.7455023603e+01    nrm: 5e-01    Viol.  con: 0e+00    var: 0e+00    barvar: 7e-09  
+  Dual.    obj: 6.7455023603e+01    nrm: 1e+00    Viol.  con: 0e+00    var: 0e+00    barvar: 7e-09  
 Optimizer summary
-  Optimizer                 -                        time: 2.89    
-    Interior-point          - iterations : 6         time: 2.89    
+  Optimizer                 -                        time: 2.84    
+    Interior-point          - iterations : 6         time: 2.84    
       Basis identification  -                        time: 0.00    
         Primal              - iterations : 0         time: 0.00    
         Dual                - iterations : 0         time: 0.00    
@@ -1484,9 +1920,33 @@ Optimizer summary
 Status: Solved
 Optimal value (cvx_optval): +67.455
  
+
+t_inner =
+
+    4.8388
+    3.7958
+    4.2323
+    3.7138
+    3.8178
+    4.1274
+    4.1391
+    4.1456
+    3.7132
+    3.2916
+    4.1685
+    3.6779
+    3.7311
+    3.7065
+    3.6932
+    3.6721
+    3.7051
+    3.6845
+    4.1098
+    3.6814
+
 largest deviation= 2.8171e-06
 20 reps
-total time = 79.8384
-mean time 3.971
-time standard deviation 0.32901
+total time = 78.0508
+mean time 3.8823
+time standard deviation 0.3301
 diary off

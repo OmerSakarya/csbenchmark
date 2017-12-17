@@ -7,7 +7,7 @@
 clear
 rng(1337);
 %run /home/omer/cvx/cvx_setup.m
-cvx_solver 'mosek'
+cvx_solver 'sdpt3'
 
 % matrix dimension 
 n = 60;

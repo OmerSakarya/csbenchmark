@@ -15,7 +15,7 @@ reps = 20;
 randn("seed", 1337);
 
 % set solver here
-solver = 'csdp';
+solver = 'sdpt3';
 
 % following function was used for some multithreading
 

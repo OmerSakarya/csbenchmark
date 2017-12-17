@@ -18,13 +18,13 @@ np.random.seed(1337)
 n = 60
 
 #number of tests
-reps = 3
+reps = 20
 
 #List contains largest deviation for each rep
 fmat = []
 
 #Choose solver
-s = cvxpy.MOSEK
+s = cvxpy.SCS
 
 #Wallclock times of single solver calls
 time_inner = [0] * reps

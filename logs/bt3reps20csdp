@@ -1,0 +1,885 @@
+octave:2> run bugtest3.m
+ 1
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+   99.92163
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+    0.00000
+
+ans =
+
+   0.078994   0.027471  -0.031620   0.332207  -0.151791
+
+ans =
+
+   0.078994   0.027471  -0.031620   0.332207  -0.151791
+
+ 2
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+   0.0157676   0.0099670   0.0199330  -0.0351687  -0.0056685
+
+ans =
+
+   0.0157676   0.0099670   0.0199330  -0.0351687  -0.0056685
+
+ 3
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+  -0.2087954  -0.0318955  -0.0189443   0.0068356   0.2616847
+
+ans =
+
+  -0.2087954  -0.0318955  -0.0189443   0.0068356   0.2616847
+
+ 4
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+   0.0179975  -0.0116177  -0.0182862   0.0079922   0.0041442
+
+ans =
+
+   0.0179975  -0.0116177  -0.0182862   0.0079922   0.0041442
+
+ 5
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+   0.23806  -0.22809  -0.20672   0.35759   0.48083
+
+ans =
+
+   0.23806  -0.22809  -0.20672   0.35759   0.48083
+
+ 6
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+   103.31442
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+  -9.5075e-04   8.8157e-03  -6.6165e-03   1.1346e-02  -3.6557e-03
+
+ans =
+
+  -9.5075e-04   8.8157e-03  -6.6165e-03   1.1346e-02  -3.6557e-03
+
+ 7
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+   103.31442
+    99.38828
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+   1.211886  -0.798096  -2.292881   0.182504  -0.090913
+
+ans =
+
+   1.211886  -0.798096  -2.292881   0.182504  -0.090913
+
+ 8
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+   103.31442
+    99.38828
+    99.07243
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+  -0.74325  -0.34155  -0.36319   0.26418   0.10356
+
+ans =
+
+  -0.74325  -0.34155  -0.36319   0.26418   0.10356
+
+ 9
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+   103.31442
+    99.38828
+    99.07243
+    96.40219
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+   0.81549   1.85856  -3.54915   2.35739  -0.67636
+
+ans =
+
+   0.81549   1.85856  -3.54915   2.35739  -0.67636
+
+ 10
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+   103.31442
+    99.38828
+    99.07243
+    96.40219
+   101.63460
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+   0.16977   0.44353   1.61019  -0.56798   1.34800
+
+ans =
+
+   0.16977   0.44353   1.61019  -0.56798   1.34800
+
+ 11
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+   103.31442
+    99.38828
+    99.07243
+    96.40219
+   101.63460
+    98.81772
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+   0.274656   0.035460   0.085879  -0.213023   0.316946
+
+ans =
+
+   0.274656   0.035460   0.085879  -0.213023   0.316946
+
+ 12
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+   103.31442
+    99.38828
+    99.07243
+    96.40219
+   101.63460
+    98.81772
+    99.11234
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+   1.03516  -0.85192  -0.22347   0.87925   1.39187
+
+ans =
+
+   1.03516  -0.85192  -0.22347   0.87925   1.39187
+
+ 13
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+   103.31442
+    99.38828
+    99.07243
+    96.40219
+   101.63460
+    98.81772
+    99.11234
+    97.77889
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+   0.473224  -0.021665  -0.277366  -0.556384   0.678451
+
+ans =
+
+   0.473224  -0.021665  -0.277366  -0.556384   0.678451
+
+ 14
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+   103.31442
+    99.38828
+    99.07243
+    96.40219
+   101.63460
+    98.81772
+    99.11234
+    97.77889
+    95.87064
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+   0.23484   0.34206  -0.16802  -0.12351   0.12632
+
+ans =
+
+   0.23484   0.34206  -0.16802  -0.12351   0.12632
+
+ 15
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+   103.31442
+    99.38828
+    99.07243
+    96.40219
+   101.63460
+    98.81772
+    99.11234
+    97.77889
+    95.87064
+    95.85136
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+   0.0319468  -0.0099182  -0.0588525   0.0399271   0.0181915
+
+ans =
+
+   0.0319468  -0.0099182  -0.0588525   0.0399271   0.0181915
+
+ 16
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+   103.31442
+    99.38828
+    99.07243
+    96.40219
+   101.63460
+    98.81772
+    99.11234
+    97.77889
+    95.87064
+    95.85136
+   105.62404
+     0.00000
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+   0.28158  -0.95511   2.28770   0.15114   1.87120
+
+ans =
+
+   0.28158  -0.95511   2.28770   0.15114   1.87120
+
+ 17
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+   103.31442
+    99.38828
+    99.07243
+    96.40219
+   101.63460
+    98.81772
+    99.11234
+    97.77889
+    95.87064
+    95.85136
+   105.62404
+   100.32213
+     0.00000
+     0.00000
+     0.00000
+
+ans =
+
+   1.66628  -0.46643   1.32507  -0.19462  -0.67828
+
+ans =
+
+   1.66628  -0.46643   1.32507  -0.19462  -0.67828
+
+ 18
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+   103.31442
+    99.38828
+    99.07243
+    96.40219
+   101.63460
+    98.81772
+    99.11234
+    97.77889
+    95.87064
+    95.85136
+   105.62404
+   100.32213
+    98.89581
+     0.00000
+     0.00000
+
+ans =
+
+  -0.057658  -0.232201   0.168294   0.029146   0.010670
+
+ans =
+
+  -0.057658  -0.232201   0.168294   0.029146   0.010670
+
+ 19
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.92163
+   102.81908
+    98.78122
+   100.68747
+   112.23144
+   103.31442
+    99.38828
+    99.07243
+    96.40219
+   101.63460
+    98.81772
+    99.11234
+    97.77889
+    95.87064
+    95.85136
+   105.62404
+   100.32213
+    98.89581
+    99.07678
+     0.00000
+
+ans =
+
+  -0.243104  -0.046580  -0.399261   0.011932  -0.743235
+
+ans =
+
+  -0.243104  -0.046580  -0.399261   0.011932  -0.743235
+
+ 20
+Linear matrix variable 60x60 (full, real, 3600 variables)
+Nonlinear scalar (real, models 'norm_nuclear', 1 variable)
+++++++++++++++++++++++++++++++++++++
+|   ID|                  Constraint|
+++++++++++++++++++++++++++++++++++++
+|   #1|   Equality constraint 360x1|
+++++++++++++++++++++++++++++++++++++
+Transposing A to match b 
+Number of constraints: 7261 
+Number of SDP blocks: 1 
+Number of LP vars: 721 
+t_inner =
+
+    99.922
+   102.819
+    98.781
+   100.687
+   112.231
+   103.314
+    99.388
+    99.072
+    96.402
+   101.635
+    98.818
+    99.112
+    97.779
+    95.871
+    95.851
+   105.624
+   100.322
+    98.896
+    99.077
+    96.119
+
+ans =
+
+   0.047778   0.115982  -0.092151  -0.163388  -0.121698
+
+ans =
+
+   0.047778   0.115982  -0.092151  -0.163388  -0.121698
+
+
+
+
+
+  scalar structure containing the fields:
+
+    yalmiptime =  16.741
+    solvertime =  79.373
+    info = Successfully solved (CSDP)
+    problem = 0
+
+
+
+largest deviation= 3.3543e-07
+
+20 reps
+
+total time = 2007.595
+
+mean time 100.086
+
+time standard deviation 3.8214
+
+octave:3> diary off
